@@ -1,0 +1,23 @@
+
+
+toupper(c) Convertir a mayuscula
+tolower(c) a Minuscula
+
+cin.ignore() se utiliza para ignorar caracteres en el flujo de entrada
+getline(cin,vector[i]) lee una linea hasta que encuentre un caracter de nueva linea o espacio
+switch
+En C++ el switch esta diseñado para trabajar con int
+char enum y no con string se deberia usar if y else if..
+
+printf("%02d:%02d",horas, min) para formato de hh:mm
+otra manera serias:
+añadir un 
+#include <iomanip>
+cout<<setw(2)<<setfill('0')<<horas<<":"<<setw(2)<<setfill('0')<<minutos
+
+para redondear 
+#include <iomanip>
+cout<<fixed<<setprecision(2)<<resultado;
+----- otra forma 
+<cmath>
+resultado = round(resultado*100)/100;
